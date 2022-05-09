@@ -1,0 +1,67 @@
+.FIO{
+    color: grey;
+}
+
+.container{
+    display: block;
+    margin-left: 127px;
+}
+
+.bel{
+    margin-top: -290px;
+    margin-left: 325px;
+}
+
+.bel-teacher{
+    margin-left: 80px;
+}
+
+hr{
+    width: 695px;
+    margin-left: 185px;
+}
+
+.subjects li{
+    margin-left: -10px;
+}
+
+.rus,
+.en,
+.ger,
+.china,
+.math, 
+.phys, 
+.info, 
+.chem, 
+.bio, 
+.his, 
+.geo,
+.physics,
+.labor,
+.music{
+    margin-left: 185px;
+}
+
+.rus-teacher, 
+.en-teacher, 
+.ger-teacher, 
+.china-teacher, 
+.math-teacher, 
+.phys-teacher, 
+.info-teacher, 
+.chem-teacher, 
+.bio-teacher,
+.his-teacher,
+.geo-teacher,
+.physics-teacher,
+.labor-teacher,
+.music-teacher{
+    margin-left: 80px;
+}
+
+
+
+
+
+
+

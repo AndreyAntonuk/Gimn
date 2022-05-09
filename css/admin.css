@@ -1,0 +1,28 @@
+.container{
+    display: block;
+    margin-left: 127px;
+}
+
+.admin{
+    margin-top: -290px;
+    margin-left: 325px;
+}
+
+.admin-member{
+    margin-left: 80px;
+}
+
+.admin-member2{
+    margin-left: 50px;
+}   
+
+.admin-member3{
+    margin-left: 45px;
+}
+
+.FIO, .Post{
+    font-size: 14px;
+    color: grey;
+}
+
+
