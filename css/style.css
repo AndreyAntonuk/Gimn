@@ -1,0 +1,75 @@
+/* Стили для главной страницы */
+
+
+.logo1{
+    margin-left: 430px;
+}
+
+.logo2{
+    margin-left: 100px;
+}
+
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #94CAF3; 
+}
+
+.navbar-nav{
+    margin-left: 365px;
+}
+
+.navbar-nav a:hover{
+    background: #94CAF3;
+}
+
+.nav-item{
+    margin-left: 10px;
+}
+
+.place_for_search{
+    margin-left: 20px;
+}
+
+.d-flex{
+    margin-left: 105px;
+}
+
+.mar{
+    margin-left: 145px;
+}
+
+.icon{
+    margin-left: 50px;
+}
+
+.block1{
+    margin-left: 50px;
+    width: 220px;
+}
+
+.block2{
+    float: right;
+    margin-right: 55px;
+    margin-top: -291px;
+    width: 220px;
+}
+
+.content{
+    margin-top: 300px;
+    margin-left: 380px;
+}
+
+.text{
+    display: block;
+    margin: -290px 0;
+    margin-left: 325px;
+}
+
+.Gymn{
+    margin-left: 50px;
+}
+
+aside a{
+    text-decoration: none;
+}
