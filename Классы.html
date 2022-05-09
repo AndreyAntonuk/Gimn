@@ -1,0 +1,2893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" type="text/javascript"></script>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/classes.css">
+</head>
+<body>
+    <header>
+        <h3 class="text-center">ГУО "Гимназия имени Я.Купалы"</h3>
+        <div class="logo">
+            <img src="img/logo.png" alt="" class="logo1">
+            <img src="img/logo.png" alt="" class="logo2">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a href="index.html"><img src="img/icon.png" alt="" class="icon"></a>
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="О нас.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Новости.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Контакты.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Схема проезда.html">Схема проезда</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mar">
+                    <input class="form-control me-2 place_for_search" type="text" id="text-to-find" value="" placeholder="Что ищем?" autofocus>
+                    <button class="btn btn-dark button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true);"  value="Поиск" title="Начать поиск">Поиск</button>
+                  </form>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <img src="img/Gymn.jpg" alt="" class="Gymn">
+    <aside class="block1">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Администрация.html">Администрация</li>
+            <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Учительская.html">Учительская</a></li>
+            <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Классы.html">Классы</a></li>
+            <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Расписание.html">Расписание</a></li>
+        </ul>
+    </aside>
+    <aside class="block2">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-success"><a href="Телефоны доверия и экстренная психологическая помощь.html">Телефоны доверия<br> и экстренная<br> психологическая<br> помощь</a><br></li>
+            <li class="list-group-item list-group-item-action list-group-item-success"><a href="Наши достижения.html">Наши достижения</a><br></li>
+            <li class="list-group-item list-group-item-action list-group-item-success"> <a href="Профилактика короновируса.html">Профилактика<br> короновируса</a><br></li>
+            <li class="list-group-item list-group-item-action list-group-item-success"><a href="Воспитательная и идеалогическая работа.html">Воспитательная и<br> идеалогическая работа</a></li>
+        </ul>
+    </aside>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <div class="classes">
+        <h4>Классы</h4>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">2 "А"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">2 "Б"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">2 "В"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">2 "Г"</a>
+        <hr>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">3 "А"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">3 "Б"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">3 "В"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">3 "Г"</a>
+        <hr>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">4 "А"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">4 "Б"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">4 "В"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">4 "Г"</a>
+        <hr>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop13">5 "А"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop14">5 "Б"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop15">5 "В"</a>
+        <hr>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop16">6 "А"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop17">6 "Б"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop18">6 "В"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop19">6 "Г"</a>
+        <hr>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop20">7 "А"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop21">7 "Б"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop22">7 "В"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop23">7 "Г"</a>
+        <hr>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop24">8 "А"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop25">8 "Б"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop26">8 "В"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop27">8 "Г"</a>
+        <hr>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop28">9 "А"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop29">9 "Б"</a>
+        <a href="#" class="room" data-bs-toggle="modal" data-bs-target="#staticBackdrop30">9 "В"</a>
+        <hr>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop31">10 "А"</a>
+        <a href="#" class="room2" data-bs-toggle="modal" data-bs-target="#staticBackdrop32">10 "Б"</a>
+        <hr>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop33">11 "А"</a>
+        <a href="#" class="room2" data-bs-toggle="modal" data-bs-target="#staticBackdrop34">11 "Б"</a>
+
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">2 "A"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Учебные предметы</h4>
+                        <span>Информация отсутствует</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">2 "Б"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Учебные предметы</h4>
+                        <span>Информация отсутствует</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">2 "В"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Учебные предметы</h4>
+                        <span>Информация отсутствует</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">2 "Г"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Учебные предметы</h4>
+                        <span>Информация отсутствует</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">3 "А"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Учебные предметы</h4>
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Сафронова Надежда Алексеевна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Ле</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Леонович Марта Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Изобразительное искусство</td>
+                                <td>Леонович Марта Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Математика</td>
+                                <td>Леонович Марта Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Музыка</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Немецкий язык</td>
+                                <td>Красикова Инесса Валерьевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Основы безопасности жизнедеятельности</td>
+                                <td>Леонович Марта Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Русская литература</td>
+                                <td>Леонович Марта Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Русский язык</td>
+                                <td>Леонович Марта Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Трудовое обучение</td>
+                                <td>Леонович Марта Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Физическая культура и здоровье</td>
+                                <td>Демидовец Евгений Сергеевич</td>
+                            </tr>
+                            <tr>
+                                <td>13. Человек и Мир</td>
+                                <td>Леонович Марта Петровна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">3 "Б"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Галенко Янина Маратовна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Изобразительное искусство</td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Классный час</td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Математика</td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Музыка</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Основы безопасности жизнедеятельности</td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Русская литература</td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Русский язык</td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Трудовое обучение</td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Физическая культура и здоровье
+                                </td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Человек и Мир</td>
+                                <td>Падило Галина Михайловна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">3 "В"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Сафронова Надежда Алексеевна,
+                                Филонова Ольга Юрьевна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Джамгарова Марина Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Джамгарова Марина Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Математика</td>
+                                <td>Джамгарова Марина Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Музыка</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Немецкий язык</td>
+                                <td>Красикова Инесса Валерьевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Основы безопасности жизнедеятельности</td>
+                                <td>Джамгарова Марина Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Русская литература</td>
+                                <td>Джамгарова Марина Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Русский язык</td>
+                                <td>Джамгарова Марина Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Человек и Мир</td>
+                                <td>Джамгарова Марина Николаевна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">3 "Г"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Филонова Ольга Юрьевна,
+                                Сафронова Надежда Алексеевна,
+                                Галенко Янина Маратовна</td>
+                            </tr>
+                            <tr>
+                                <td>2.Белорусская литература</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Изобразительное искусство</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Информационный час</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Классный час</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Математика</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Музыка</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Основы безопасности жизнедеятельности</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Платное занятие "Юный лингвист"</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Пусская литература</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Русский язык</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Трудовое обучение</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>15. Час здоровья и спорт</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>16. Человек и Мир</td>
+                                <td>Лисовская Анжела Анатольевна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">4 "А"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Филонова Ольга Юрьевна,
+                                Галенко Янина Маратовна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Колюбовская Елена Валентиновна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Колюбовская Елена Валентиновна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Изобразительное искусство</td>
+                                <td>Колюбовская Елена Валентиновна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Математика</td>
+                                <td>Колюбовская Елена Валентиновна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Музыка</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Основы безопасности жизнедеятельности</td>
+                                <td>Колюбовская Елена Валентиновна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Русская литература</td>
+                                <td>Колюбовская Елена Валентиновна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Русский язык</td>
+                                <td>Колюбовская Елена Валентиновна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Трудовое обучение</td>
+                                <td>Колюбовская Елена Валентиновна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Физическая культура и здоровье
+                                </td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>12. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>13. Человек и Мир</td>
+                                <td>Колюбовская Елена Валентиновна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">4 "Б"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Филонова Ольга Юрьевна,
+                                Галенко Янина Маратовна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Полещук Людмила Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Полещук Людмила Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Изобразительное искусство</td>
+                                <td>Полещук Людмила Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Математика</td>
+                                <td>Полещук Людмила Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Музыка</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Немецкий язык</td>
+                                <td>Кузьменко Наталья Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Основы безопасности жизнедеятельности</td>
+                                <td>Полещук Людмила Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Русская литература</td>
+                                <td>Полещук Людмила Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Русский язык</td>
+                                <td>Полещук Людмила Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Трудовое обучение</td>
+                                <td>Полещук Людмила Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>13. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>14. Человек и Мир</td>
+                                <td>Полещук Людмила Ивановна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">4 "В"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Филонова Ольга Юрьевна,
+                                Галенко Янина Маратовна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Домасевич Елена Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Домасевич Елена Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Изобразительное искусство</td>
+                                <td>Домасевич Елена Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Математика</td>
+                                <td>Домасевич Елена Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Музыка</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Немецкий язык</td>
+                                <td>Кузьменко Наталья Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Основы безопасности жизнедеятельности</td>
+                                <td>Домасевич Елена Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Русская литература</td>
+                                <td>Домасевич Елена Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Русский язык</td>
+                                <td>Домасевич Елена Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Трудовое обучение</td>
+                                <td>Домасевич Елена Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>13. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>14. Человек и Мир</td>
+                                <td>Домасевич Елена Владимировна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">4 "Г"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Филонова Ольга Юрьевна,
+                                Галенко Янина Маратовна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Нагорная Елена Леонидовна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Нагорная Елена Леонидовна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Изобразительное искусство</td>
+                                <td>Нагорная Елена Леонидовна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Математика</td>
+                                <td>Нагорная Елена Леонидовна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Музыка</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Немецкий язык</td>
+                                <td>Кузьменко Наталья Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Основы безопасности жизнедеятельности</td>
+                                <td>Нагорная Елена Леонидовна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Русская литература</td>
+                                <td>Нагорная Елена Леонидовна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Русский язык</td>
+                                <td>Нагорная Елена Леонидовна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Трудовое обучение</td>
+                                <td>Нагорная Елена Леонидовна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Физическая культура и здоровье
+                                </td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>13. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>14. Человек и Мир </td>
+                                <td>Нагорная Елена Леонидовна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop13" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">5 "А"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Карпеш Ирина Михайловна,
+                                Орлова Вероника Фёдоровна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Всемирная История</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Математика</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Русская литература</td>
+                                <td>Гурьева Маргарита Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Русский язык</td>
+                                <td>Гурьева Маргарита Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>10. Физическая культура и здоровье</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Час здоровья и спорта</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Человек и Мир </td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop14" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">5 "Б"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Овсяник Марина Александровна,
+                                Сулейманова Татьяна Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Северин Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Северин Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Всемирная История</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Изобразительное искусство</td>
+                                <td>Михед Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Математика</td>
+                                <td>Нежданова Татьяна Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Музыка</td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Немецкий язык</td>
+                                <td>Сорока Елена Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Основы безопасности жизнедеятельности</td>
+                                <td>Галанчик Ольга Павловна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Русская литература</td>
+                                <td>Гурьева Маргарита Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Русский язык</td>
+                                <td>Гурьева Маргарита Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>14. Физическая культура и здоровье</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Час здоровья и спорта</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Человек и Мир </td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop15" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">5 "В"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Карпеш Ирина Михайловна,
+                                Орлова Вероника Фёдоровна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Информационный час</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Искусство. Отечественная и мировая художественная культура
+                                </td>
+                                <td>Орлова Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. История</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Классный час</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Математика</td>
+                                <td>Нежданова Татьяна Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Немецкий язык</td>
+                                <td>немецкий язык: Красикова Инесса Валерьевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Основы безопасности жизнедеятельности</td>
+                                <td>Ранчинский Михаил Михайлович</td>
+                            </tr>
+                            <tr>
+                                <td>11. Русская литература</td>
+                                <td>Гурьева Маргарита Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Русский язык</td>
+                                <td>Гурьева Маргарита Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>14. Физическая культура и здоровье</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Час здоровья и спорта </td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Человек и Мир</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop16" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">6 "А"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Стрельченя Ольга Алексеевна,
+                                Сулейманова Татьяна Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Классный час</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Математика</td>
+                                <td>Бондаренко Татьяна Григорьевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Немецкий язык</td>
+                                <td>Важова Ирина Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Основы безопасности жизнедеятельности</td>
+                                <td>Ранчинский Михаил Михайлович</td>
+                            </tr>
+                            <tr>
+                                <td>15. Русская литература</td>
+                                <td>Савенко Кристина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Русский язык</td>
+                                <td>Савенко Кристина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>17. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>18. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>19. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>20. Человек и Мир</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop17" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">6 "Б"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Стрельченя Ольга Алексеевна,
+                                Сулейманова Татьяна Владимировна,
+                                Пикун Наталья Анатольвна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. История Беларуси</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Классный час</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Математика</td>
+                                <td>Бондаренко Татьяна Григорьевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Основы безопасности жизнедеятельности</td>
+                                <td>Ранчинский Михаил Михайлович</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русская литература</td>
+                                <td>Савенко Кристина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русский язык</td>
+                                <td>Савенко Кристина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>17. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>18. Человек и Мир</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop18" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">6 "В"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Стрельченя Ольга Алексеевна,
+                                Сулейманова Татьяна Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Северин Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Северин Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Классный час</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Математика</td>
+                                <td>Бондаренко Татьяна Григорьевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Основы безопасности жизнедеятельности</td>
+                                <td>Ранчинский Михаил Михайлович</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русская литература</td>
+                                <td>Савенко Кристина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Русский язык</td>
+                                <td>Савенко Кристина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>18. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>19. Человек и Мир</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop19" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">6 "Г"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Стрельченя Ольга Алексеевна,
+                                Сулейманова Татьяна Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Северин Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Северин Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Стрельченя Ольга Алексеевна</td>
+                            </tr>
+                                <td>9. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Классный час</td>
+                                <td>Стрельченя Ольга Алексеевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Математика</td>
+                                <td>Конюшкова Галина Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Немецкий язык</td>
+                                <td>Сорока Елена Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Основы безопасности жизнедеятельности</td>
+                                <td>Ранчинский Михаил Михайлович</td>
+                            </tr>
+                            <tr>
+                                <td>15. Платное занятие "Юный лингвист"</td>
+                                <td>Савенко Кристина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Платное занятие "В мире чисел"</td>
+                                <td>Савенко Кристина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>17. Русская литература</td>
+                                <td>Савенко Кристина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Русский язык</td>
+                                <td>Савенко Кристина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>20. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>21. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>22. Человек и Мир</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop20" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">7 "А"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Пикун Наталья Анатольвна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. История Беларуси</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Классный час</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Математика</td>
+                                <td>Конюшкова Галина Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Немецкий язык</td>
+                                <td>Кузьменко Наталья Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русская литература</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русский язык</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физика</td>
+                                <td>Прокопчик Елена Геннадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Физическая культура и здоровье</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>20. Час здоровья и спорта</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop21" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">7 "Б"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Пикун Наталья Анатольвна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Хилько Татьяна Павловна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Математика</td>
+                                <td>Конюшкова Галина Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Немецкий язык</td>
+                                <td>Толкач Елена Викентьевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русская литература</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русский язык</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физическая культура и здоровье</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физика</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Час здоровья и спорта</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop22" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">7 "В"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Овсяник Марина Александровна,
+                                Сазонова Алевтина Евгеньевна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Хилько Татьяна Павловна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Математика</td>
+                                <td>Конюшкова Галина Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Немецкий язык</td>
+                                <td>Толкач Елена Викентьевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русская литература</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русский язык</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физика</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физическая культура и здоровье</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Час здоровья и спорта</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop23" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">7 "Г"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Сазонова Алевтина Евгеньевна,
+                                Пикун Наталья Анатольвна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Солонкова Анна Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Маслова Валентина Алексеевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Сазонова Алевтина Евгеньевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Маслова Валентина Алексеевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Математика</td>
+                                <td>Глушкевич Наталья Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Русская литература</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русский язык</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>15. Физика</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физическая культура и здоровье</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>17. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Час здоровья и спорта</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop24" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">8 "А"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Кобысь Наталья Сергеевна,
+                                Орлова Вероника Фёдоровна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Коноплич Наталья Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Коноплич Наталья Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. История Беларуси</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Математика</td>
+                                <td>Чак Елена Николаевна, Нежданова Татьяна Анатольевна </td>
+                            </tr>
+                            <tr>
+                                <td>11. Немецкий язык</td>
+                                <td>Толкач Елена Викентьевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Русская литература</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русский язык</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>15. Физика</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физическая культура и здоровье</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>17. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Час здоровья и спорта</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop25" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">8 "Б"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Овсяник Марина Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Северин Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Северин Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td>8. Классный час</td>
+                                <td>Алексанина Галина Сергеевна</td>
+                            </tr>
+                                <td>9. Математика</td>
+                                <td>Нежданова Татьяна Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Немецкий язык</td>
+                                <td>Толкач Елена Викентьевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Русская литература</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Русский язык</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>14. Физика</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Физическая культура и здоровье</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>17. Час здоровья и спорта</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop26" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">8 "В"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Толкач Елена Викентьевна,
+                                Кобысь Наталья Сергеевна,
+                                Орлова Вероника Фёдоровна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Коноплич Наталья Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Коноплич Наталья Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Кобысь Наталья Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Математика</td>
+                                <td>Чак Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Русская литература</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русский язык</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физика</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физическая культура и здоровье</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Час здоровья и спорта</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop27" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">8 "Г"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Овсяник Марина Александровна,
+                                Орлова Вероника Фёдоровна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Северин Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Северин Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Овсяник Марина Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Алфёрова Татьяна Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Классный час</td>
+                                <td>Овсяник Марина Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Математика</td>
+                                <td>Чак Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Немецкий язык</td>
+                                <td>Толкач Елена Викентьевна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русская литература</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Русский язык</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физика</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Физическая культура и здоровье</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>20. Час здоровья и спорта</td>
+                                <td>Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop28" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">9 "А"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Кобысь Наталья Сергеевна,
+                                Варанкина Светлана Андреевна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Федула Оксана Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Прокопчик Елена Геннадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Федула Оксана Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Математика</td>
+                                <td>Глушкевич Наталья Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>13.Обществоведение</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русская литература</td>
+                                <td>Гурьева Маргарита Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русский язык</td>
+                                <td>Гурьева Маргарита Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физика</td>
+                                <td>Прокопчик Елена Геннадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физическая культура и здоровье</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>20. Час здоровья и спорта</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop29" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">9 "Б"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Кобысь Наталья Сергеевна,
+                                Варанкина Светлана Андреевна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Коноплич Наталья Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Коноплич Наталья Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Федула Оксана Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. История Беларуси</td>
+                                <td>Федула Оксана Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Математика</td>
+                                <td>Глушкевич Наталья Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Обществоведение</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Русская литература</td>
+                                <td>Гурьева Маргарита Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русский язык</td>
+                                <td>Гурьева Маргарита Анатольевна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>15. Физика</td>
+                                <td>Прокопчик Елена Геннадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физическая культура и здоровье</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>17. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Час здоровья и спорта</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop30" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">9 "В"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Кобысь Наталья Сергеевна,
+                                Варанкина Светлана Андреевна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Федула Оксана Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Кузьменко Наталья Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Искусство. Отечественная и мировая художественная культура</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. История Беларуси</td>
+                                <td>Федула Оксана Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Классный час</td>
+                                <td>Кузьменко Наталья Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Математика</td>
+                                <td>Бондаренко Татьяна Григорьевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Немецкий язык</td>
+                                <td>Немецкий: Кузьменко Наталья Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Обществоведение</td>
+                                <td>Филимонова Светлана Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Русская литература</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русский язык</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физика</td>
+                                <td>Прокопчик Елена Геннадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>19. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>20. Час здоровья и спорта</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop31" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">10 "А"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Карпеш Ирина Михайловна,
+                                Сазонова Алевтина Евгеньевна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Коноплич Наталья Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Коноплич Наталья Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Литвинович Татьяна Викторовна, Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>9.История Беларуси</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Классный час</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Математика</td>
+                                <td>Глушкевич Наталья Михайловна
+                                    Борисевич Татьяна Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Немецкий язык</td>
+                                <td>Важова Ирина Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Обществоведение</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русская литература</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русский язык</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физика</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Физическая культура и здоровье</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Химия</td>
+                                <td>Ратайко Карина Владиславовна</td>
+                            </tr>
+                            <tr>
+                                <td>20. Час здоровья и спорта</td>
+                                <td>Андрюк Юлия Александровна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop32" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">10 "Б"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Карпеш Ирина Михайловна,
+                                Сазонова Алевтина Евгеньевна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Белорусская литература</td>
+                                <td>Коноплич Наталья Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусский язык</td>
+                                <td>Коноплич Наталья Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Биология</td>
+                                <td>Литвинович Татьяна Викторовна, Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>9. История Беларуси</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Классный час</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Математика</td>
+                                <td>Бондаренко Татьяна Григорьевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Немецкий язык</td>
+                                <td>Важова Ирина Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Обществоведение</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русская литература</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русский язык</td>
+                                <td>Козловская Надежда Ивановна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физика</td>
+                                <td>Мышковская Антонина Петровна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич, Андрюк Юлия Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Химия</td>
+                                <td>Алисейко Ирина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>20. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>21. Черчение</td>
+                                <td>Ходосок Жанна Викторовна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop33" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">11 "А"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Англ. яз. Карпеш И.М. 2021: Карпеш Ирина Михайловна (классный руководитель)</td>
+                            </tr>
+                            <tr>
+                                <td>2.Астрономия</td>
+                                <td>Прокопчик Елена Геннадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусская литература</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Белорусский язык</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Биология</td>
+                                <td>Литвинович Татьяна Викторовна, Соловей Ольга Александровна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Всемирная История</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>6. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информационный час</td>
+                                <td>Карпеш Ирина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>9. История Беларуси</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>10. Классный час</td>
+                                <td>Карпеш Ирина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>11. Математика</td>
+                                <td>Чак Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Немецкий язык</td>
+                                <td>Красикова Инесса Валерьевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Обществоведение</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Русская литература</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Русский язык</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>16. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>17. Физика</td>
+                                <td>Прокопчик Елена Геннадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>18. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич, Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Химия</td>
+                                <td>Алисейко Ирина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>20. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>21. Черчение</td>
+                                <td>Ходосок Жанна Викторовна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop34" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">11 "Б"</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-info">
+                            <tr>
+                                <th>Название предмета</th>
+                                <th>ФИО преподавателя</th>
+                            </tr>
+                            <tr>
+                                <td>1. Английский язык</td>
+                                <td>Варанкина Светлана Андреевна,
+                                Карпеш Ирина Михайловна</td>
+                            </tr>
+                            <tr>
+                                <td>2. Астрономия</td>
+                                <td>Прокопчик Елена Геннадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>3. Белорусская литература</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>4. Белорусский язык</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>5. Биология</td>
+                                <td>Литвинович Татьяна Викторовна</td>
+                            </tr>
+                            <tr>
+                                <td>6. Всемирная История</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>7. География</td>
+                                <td>Александрова Анжелика Васильевна</td>
+                            </tr>
+                            <tr>
+                                <td>8. Информатика</td>
+                                <td>Хилько Татьяна Павловна,
+                                Алексанина Галина Сергеевна</td>
+                            </tr>
+                            <tr>
+                                <td>9. Информационный час</td>
+                                <td>Чак Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>10.История Беларуси</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>11.Классный час</td>
+                                <td>Чайка Анна Дмитриевна</td>
+                            </tr>
+                            <tr>
+                                <td>12. Математика</td>
+                                <td>Чак Елена Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>13. Немецкий язык</td>
+                                <td>Красикова Иннеса Валерьевна</td>
+                            </tr>
+                            <tr>
+                                <td>14. Обществоведение</td>
+                                <td>Янковская Инесса Николаевна</td>
+                            </tr>
+                            <tr>
+                                <td>15. Русская литература</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>16. Русский язык</td>
+                                <td>Смолян Нина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>17. Трудовое обучение</td>
+                                <td>Ходосок Жанна Викторовна,
+                                Бобович Дмитрий Леонидович</td>
+                            </tr>
+                            <tr>
+                                <td>18. Физика</td>
+                                <td>Прокопчик Елена Геннадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>19. Физическая культура и здоровье</td>
+                                <td>Клименко Геннадий Георгиевич, Зборовская Тамара Аркадьевна</td>
+                            </tr>
+                            <tr>
+                                <td>20. Химия</td>
+                                <td>Алисейко Ирина Владимировна</td>
+                            </tr>
+                            <tr>
+                                <td>21. Час здоровья и спорта</td>
+                                <td>Клименко Геннадий Георгиевич</td>
+                            </tr>
+                            <tr>
+                                <td>22. Черчение</td>
+                                <td>Ходосок Жанна Викторовна</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

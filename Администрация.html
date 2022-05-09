@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js" type="text/javascript"></script>
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/teacher.css">
+</head>
+<body>
+  <header>
+    <h3 class="text-center">ГУО "Гимназия имени Я.Купалы"</h3>
+    <div class="logo">
+      <img src="img/logo.png" alt="" class="logo1">
+      <img src="img/logo.png" alt="" class="logo2">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <a href="index.html"><img src="img/icon.png" alt="" class="icon"></a>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="О нас.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Новости.html">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Контакты.html">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Схема проезда.html">Схема проезда</a>
+            </li>
+          </ul>
+          <form class="d-flex mar">
+            <input class="form-control me-2 place_for_search" type="text" id="text-to-find" value="" placeholder="Что ищем?" autofocus>
+            <button class="btn btn-dark button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true);"  value="Поиск" title="Начать поиск">Поиск</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <img src="img/Gymn.jpg" alt="" class="Gymn">
+  <aside class="block1">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Администрация.html">Администрация</li>
+      <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Учительская.html">Учительская</a></li>
+      <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Классы.html">Классы</a></li>
+      <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Расписание.html">Расписание</a></li>
+    </ul>
+  </aside>
+  <aside class="block2">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-action list-group-item-success"><a href="Телефоны доверия и экстренная психологическая помощь.html">Телефоны доверия<br> и экстренная<br> психологическая<br> помощь</a><br></li>
+      <li class="list-group-item list-group-item-action list-group-item-success"><a href="Наши достижения.html">Наши достижения</a><br></li>
+      <li class="list-group-item list-group-item-action list-group-item-success"> <a href="Профилактика короновируса.html">Профилактика<br> короновируса</a><br></li>
+      <li class="list-group-item list-group-item-action list-group-item-success"><a href="Воспитательная и идеалогическая работа.html">Воспитательная и<br> идеалогическая работа</a></li>
+    </ul>
+  </aside>
+    <div class="administratin">
+      <h4 class="admin">Администрация</h4>
+      <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+          <div class="col-2">
+            <div class="admin-member">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><img src="img/Admin/Director.jpg" alt="" ><br></a>
+              <span class="FIO">Ранчинский Михаил<br> Михайлович</span><br>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="admin-member">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"><img src="img/Admin/Zam_dir1.jpg" alt=""><br></a>
+              <span class="FIO">Маслова Валентина<br> Алексеевна</span><br>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="admin-member">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"><img src="img/Admin/Zam_dir2.jpg" alt=""><br></a>
+              <span class="FIO">Федула<br> Оксана<br> Владимировна</span><br>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="admin-member">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"><img src="img/Admin/Zam_dir3.jpg" alt=""><br></a>
+              <span class="FIO">Михед<br> Елена<br> Николаевна</span><br>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="d-flex justify-content-around mt-2">
+            <div class="col-2">
+              <div class="admin-member2">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop5"><img src="img/Admin/Zam_dir4.jpg" alt=""><br></a>
+                <span class="FIO">Борисевич Татьяна<br> Александровна</span><br>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="admin-member3">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop6"><img src="img/Admin/Zam_dir5.jpg" alt=""><br></a>
+                <span class="FIO">Максимова<br> Наталья<br> Витальевна</span><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="staticBackdropLabel">Ранчинский Михаил Михайлович</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Admin/Director.jpg" alt=""><br>
+            <span><b>Директор гимназии</b></span><br>
+            <span><b>Телефон: </b>(0236) 23-07-01</span><br>
+            <span><b>Время работы:</b>
+            На период летних каникул:<br>
+            Понедельник - среда 8.30-17.00<br>
+            Четверг 8:00 - 17:00<br>
+            пятница 8:30 - 16:30</span><br>
+            <span><b>Преподаёт:</b></span><br>
+            <ul class="subjects">
+              <li>Основы безопасности жизнедеятельности в 5-ом "В", 6-ом "А" 6-ом "Б" 6-ом "В" 6-ом "Г".</li>
+            </ul>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="staticBackdropLabel">Маслова Валентина Алексеевна</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Admin/Zam_dir1.jpg" alt=""><br> 
+            <span><b>Администрация</b> (Заместитель директора по учебной работе)</span><br>
+            <span><b>Телефон: </b>8 0236 23-04-74</span><br>
+            <span><b>Время работы:</b><br>
+            Понедельник - пятница 8:00-17:00,<br>
+            суббота по графику</span><br>
+            <span><b>Преподаёт:</b></span><br>
+            <ul class="subjects">
+              <li>История Беларуси в 7-ом "В" 7-ом "Г";</li>
+              <li>Всемирная История в 7-ом "В" 7-ом "Г".</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="staticBackdropLabel">Федула Оксана Владимировна</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Admin/Zam_dir2.jpg" alt=""><br>
+            <span><b>Администрация</b> (Заместитель директора по воспитательной работе)</span><br>
+            <span><b>Телефон: </b>8 0236 23-07-03</span><br>
+            <span><b>Время работы:</b><br>
+            Вторник - пятница 8:00-17:00,<br>
+            суббота по графику</span><br>
+            <span><b>Преподаёт:</b></span><br>
+            <ul class="subjects">
+              <li>История Беларуси в 9-ом "А" 9-ом "В" 9-ом "Б";</li>
+              <li>Всемирная История в 9-ом "А" 9-ом "В" 9-ом "Б".</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="staticBackdropLabel">Михед Елена Николаевна</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Admin/Zam_dir3.jpg" alt=""><br>
+            <span><b>Администрация</b> (Заместитель директора по учебной работе I ступени общего среднего образования) | Ответственный за питание</span><br>
+            <span><b>Телефон: </b> 8 0236 23-03-96</span><br>
+            <span><b>Время работы:</b><br>
+            Понедельник 9:00-17:00<br>
+            Вторник 7:30-19:00<br>
+            Среда 8:30-16:00<br>
+            Четверг 8:30-16:00<br>
+            Пятница 8:30-14:30<br>
+            Суббота по графику</span><br>
+            <span><b>Преподаёт:</b></span><br>
+            <ul class="subjects">
+              <li>Изобразительное искусство в 5-ом "Б".</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="staticBackdropLabel">Борисевич Татьяна Александровна</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Admin/Zam_dir4.jpg" alt=""><br>
+            <span><b>Администрация</b> (Заместитель директора по учебно-методической работе)</span><br>
+            <span><b>Телефон:</b> 8-0236 23-04-74</span><br>
+            <span><b>Время работы:</b> не указано<br>
+            <span><b>Преподаёт:</b></span>
+            <ul class="subjects">
+              <li>Математика в 10-м "А".</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="staticBackdropLabel">Максимова Наталья Витальевна</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Admin/Zam_dir5.jpg" alt=""><br>
+            <span><b>Администрация</b> (Заместитель директора по хозяйственной работе)</span><br>
+            <span><b>Телефон: </b> не указан</span><br>
+            <span><b>Время работы:</b> не указано<br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

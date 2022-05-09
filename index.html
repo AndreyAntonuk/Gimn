@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" type="text/javascript"></script>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h3 class="text-center">ГУО "Гимназия имени Я.Купалы"</h3>
+        <div class="logo">
+            <img src="img/logo.png" alt="" class="logo1">
+            <img src="img/logo.png" alt="" class="logo2">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a href="index.html"><img src="img/icon.png" alt="" class="icon"></a>
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="О нас.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Новости.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Контакты.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Схема проезда.html">Схема проезда</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mar">
+                    <input class="form-control me-2 place_for_search" type="text" id="text-to-find" value="" placeholder="Что ищем?" autofocus>
+                    <button class="btn btn-dark button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true);"  value="Поиск" title="Начать поиск">Поиск</button>
+                  </form>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <img src="img/Gymn.jpg" alt="" class="Gymn">
+    <aside class="block1">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Администрация.html">Администрация</li>
+            <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Учительская.html">Учительская</a></li>
+            <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Классы.html">Классы</a></li>
+            <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Расписание.html">Расписание</a></li>
+        </ul>
+    </aside>
+    <aside class="block2">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-success"><a href="Телефоны доверия и экстренная психологическая помощь.html">Телефоны доверия<br> и экстренная<br> психологическая<br> помощь</a><br></li>
+            <li class="list-group-item list-group-item-action list-group-item-success"><a href="Наши достижения.html">Наши достижения</a><br></li>
+            <li class="list-group-item list-group-item-action list-group-item-success"> <a href="Профилактика короновируса.html">Профилактика<br> короновируса</a><br></li>
+            <li class="list-group-item list-group-item-action list-group-item-success"><a href="Воспитательная и идеалогическая работа.html">Воспитательная и<br> идеалогическая работа</a></li>
+        </ul>
+    </aside>
+    <main>
+        <div class="text">
+            <h4>Краткая информация</h4>
+            <span>Гимназия – учреждение общего среднего образования, функционирующее в составе V–XI<br> классов, в котором осуществляются обучение и воспитание на II и III ступенях общего<br> среднего образования с изучением отдельных учебных предметов на повышенном уровне,<br> реализуется программа воспитания и защиты прав и законных интересов детей, находящихся<br> в социально опасном положении, а также могут реализовываться образовательная программа<br> начального образования, образовательная программа специального образования на уровне<br> общего среднего образования, образовательная программа дополнительного образования<br> детей и молодежи, образовательная программа профессиональной подготовки рабочих<br> (служащих), программа воспитания детей, нуждающихся в оздоровлении.
+            </span><br>
+            <span>
+                Для реализации образовательной программы начального образования в гимназии<br> дополнительно открываются I–IV классы. Порядок организации и деятельности гимназии определяется Министерством образования Республики Беларусь.  
+            </span>
+        </div>
+        <div class="content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e640HYF2kBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <footer class="text-center">
+        <p>Copyright &copy: 2022 Все права защищены</p>
+    </footer>
+</body>
+</html>

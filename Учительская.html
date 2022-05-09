@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" type="text/javascript"></script>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/teacher.css">
+</head>
+<body>
+  <header>
+    <h3 class="text-center">ГУО "Гимназия имени Я.Купалы"</h3>
+    <div class="logo">
+      <img src="img/logo.png" alt="" class="logo1">
+      <img src="img/logo.png" alt="" class="logo2">
+    </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a href="index.html"><img src="img/icon.png" alt="" class="icon"></a>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="О нас.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Новости.html">Новости</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Контакты.html">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Схема проезда.html">Схема проезда</a>
+              </li>
+            </ul>
+            <form class="d-flex mar">
+              <input class="form-control me-2 place_for_search" type="text" id="text-to-find" value="" placeholder="Что искать?" autofocus>
+              <button class="btn btn-dark button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true);"  value="Поиск" title="Начать поиск">Поиск</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <img src="img/Gymn.jpg" alt="" class="Gymn">
+  <aside class="block1">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Администрация.html">Администрация</li>
+      <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Учительская.html">Учительская</a></li>
+      <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Классы.html">Классы</a></li>
+      <li class="list-group-item list-group-item-action list-group-item-primary"><a href="Расписание.html">Расписание</a></li>
+    </ul>
+  </aside>
+  <aside class="block2">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-action list-group-item-success"><a href="Телефоны доверия и экстренная психологическая помощь.html">Телефоны доверия<br> и экстренная<br> психологическая<br> помощь</a><br></li>
+      <li class="list-group-item list-group-item-action list-group-item-success"><a href="Наши достижения.html">Наши достижения</a><br></li>
+      <li class="list-group-item list-group-item-action list-group-item-success"> <a href="Профилактика короновируса.html">Профилактика<br> короновируса</a><br></li>
+      <li class="list-group-item list-group-item-action list-group-item-success"><a href="Воспитательная и идеалогическая работа.html">Воспитательная и<br> идеалогическая работа</a></li>
+    </ul>
+  </aside>
+  <main>
+    <div class="teachers">
+      <h4 class="bel">Учителя белорусского языка и литературы</h4>
+      <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="bel-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><img src="img/Belarussion/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Коноплич<br> Наталья<br> Ивановна</span><br>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="bel-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"><img src="img/Belarussion/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Солонкова<br> Анна<br> Николаевна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="bel-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"><img src="img/Belarussion/teacher_3.jpg" alt=""><br></a>
+                <span class="FIO">Северин<br> Татьяна<br> Александровна
+                </span><br>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="bel-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"><img src="img/Belarussion/teacher_4.jpg" alt=""><br></a>
+                <span class="FIO">Чайка<br> Анна<br> Дмитриевна</span><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      <hr>
+      <h4 class="rus">Учителя русского языка и литературы</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-3">
+              <div class="rus-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop5"><img src="img/Russion/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Козловская<br> Надежда<br> Ивановна</span><br>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="rus-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop6"><img src="img/Russion/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Савенко<br> Кристина<br> Петровна</span>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="rus-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop7"><img src="img/Russion/teacher_3.jpg" alt=""><br></a>
+                <span class="FIO">Смолян<br> Нина<br> Владимировна</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      <hr>
+      <h4 class="en">Учителя английского языка</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="en-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop8"><img src="img/English/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Галенко<br> Янина<br> Маратовна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="en-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop9"><img src="img/English/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Варанкина<br> Светлана<br> Андреевна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="en-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop10"><img src="img/English/teacher_3.jpg" alt=""><br></a>
+                <span class="FIO">Карпеш<br> Ирина<br> Михайловна</span><br>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="en-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop11"><img src="img/English/teacher_4.jpg" alt=""><br></a>
+                <span class="FIO">Кобысь<br> Наталья<br> Сергеевна</span><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="ger">Учителя немецкого языка</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="ger-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop12"><img src="img/Germany/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Важова<br> Ирина<br> Николаевна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="ger-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop13"><img src="img/Germany/teacher_3.jpg" alt=""><br></a>
+                <span class="FIO">Красикова<br> Инесса<br> Валерьевна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="ger-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop14"><img src="img/Germany/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Кузьменко<br> Наталья<br> Петровна</span><br>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="ger-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop15"><img src="img/Germany/teacher_4.jpg" alt=""><br></a>
+                <span class="FIO">Толкач<br> Елена<br> Викентьевна</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="china">Учителя китайского языка</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="china-teacher">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop16"><img src="img/China/teacher_1.jpg" alt=""><br></a>
+              <span class="FIO">Сорока<br> Елена<br> Анатольевна</span>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="math">Учителя математики</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="math-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop17"><img src="img/Mathematics/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Бондаренко<br> Татьяна<br> Григорьевна</span><br>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="math-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop18"><img src="img/Mathematics/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Борисевич<br> Татьяна<br> Александровна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="math-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop19"><img src="img/Mathematics/teacher_4.jpg" alt=""><br></a>
+                <span class="FIO">Глушкевич<br> Наталья<br> Михайловна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="math-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop20"><img src="img/Mathematics/teacher_3.jpg" alt=""><br></a>
+                <span class="FIO">Конюшкова<br> Галина<br> Александровна</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="phys">Учителя физики</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="phys-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop21"><img src="img/Physics/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Мышковская<br> Антонина<br> Петровна</span><br>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="phys-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop22"><img src="img/Physics/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Прокопчик<br> Елена<br> Геннадьевна</span><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="info">Учителя информатики</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="info-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop23"><img src="img/Informatics/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Алексанина<br> Галина<br> Сергеевна</span><br>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="info-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop24"><img src="img/Informatics/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Хилько<br> Татьяна<br> Павловна</span><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="chem">Учителя химии</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="chem-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop25"><img src="img/Chemestry/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Алисейко Ирина<br> Владимировна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="chem-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop26"><img src="img/Chemestry/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Ратайко Карина<br> Владиславовна</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="bio">Учителя биологии</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="bio-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop27"><img src="img/Bialogy/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Литвинович<br> Татьяна<br> Викторовна</span><br>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="bio-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop28"><img src="img/Bialogy/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Соловей<br> Ольга<br> Александровна</span><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="his">Учителя истории</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="his-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop29"><img src="img/History/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Алфёрова<br> Татьяна<br> Васильевна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="his-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop30"><img src="img/History/teacher_3.jpg" alt=""><br></a>
+                <span class="FIO">Филимонова<br> Светлана<br> Васильевна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="his-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop31"><img src="img/History/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Янковская<br> Инесса<br> Николаевна</span><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="geo">Учителя географии</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="geo-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop32"><img src="img/Geography/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Александрова<br> Анжелика<br> Васильевна</span><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="physics">Учителя физической культуры</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="physics-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop33"><img src="img/Physical/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Андрюк<br> Юлия<br> Александровна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="physics-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop34"><img src="img/Physical/teacher_3.jpg" alt=""><br></a>
+                <span class="FIO">Демидовец<br> Евгений<br> Сергеевич</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="physics-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop35"><img src="img/Physical/teacher_4.jpg" alt=""><br></a>
+                <span class="FIO">Зборовская<br> Тамара<br> Аркадьевна</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="physics-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop36"><img src="img/Physical/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Клименко<br> Геннадий<br> Георгиевич</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="music">Учителя музыки</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="music-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop37"><img src="img/Music/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Орлова<br> Елена<br> Николаевна</span><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h4 class="labor">Учителя трудового обучения</h4>
+        <div class="row">
+          <div class="d-flex justify-content-beatwean">
+            <div class="col-2">
+              <div class="labor-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop38"><img src="img/Labor/teacher_2.jpg" alt=""><br></a>
+                <span class="FIO">Бобович<br> Дмитрий<br> Леонидович</span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="labor-teacher">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop39"><img src="img/Labor/teacher_1.jpg" alt=""><br></a>
+                <span class="FIO">Ходосок<br> Жанна<br> Викторовна</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Коноплич Наталья Ивановна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Belarussion/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя белорусского языка и литературы<br></span>
+          <span>Кл. руководитель 9-го "Б"<br></span>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li><span>Белорусский язык в 8-ом "А", 8-ом "В", 9-ом "Б", В 10-ом "А", 10-ом "Б";<br></span></li>
+            <li><span>Белорусскую литературу в 8-ом "В", 8-ом "А", 9-ом "Б", 10-ом "А", 10-ом "Б" и 10-ом "В".</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Солонкова Анна Николаевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Belarussion/teacher_2.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя белорусского языка и литературы</span><br>
+          <span>Кл. руководитель 7-го "В"</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li><span>Белорусский язык в 5-ом "В", 5-ом "А", 7-ом "В" 7-ом "Г" 7-ом "А", 7-ом "Б";</span></li>
+            <li><span>Белорусскую литературу в 5-ом "В", 5-ом "А", 7-ом "Г" 7-ом "А" 7-ом "Б", 7-ом "В";</span></li>
+            <li>Классный час в 7-ом "В".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Северин Татьяна Александровна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="img/Belarussion/teacher_3.jpg" alt=""><br>
+            <span><b>Кафедра:</b> Учителя белорусского языка и литературы</span><br><br>
+            <span><b>Преподаёт:</b><br></span>
+            <ul class="subjects">
+              <li>Белорусский язык в 8-ом "Б", 8-ом "Г", 5-ом "Б", 6-ом "Г", 6-ом "В";</li>
+              <li>Белорусскую литературу в 8-ом "Б", 8-ом "Г", 5-ом "Б", 6-ом "Г", 6-ом "В".</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Чайка Анна Дмитриевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Belarussion/teacher_4.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя белорусского языка и литературы</span><br>
+          <span>Кл. руководитель 11-го "Б"</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Белорусский язык в 9-ом "А", 9-ом "В", 11-ом "Б", 11-ом "А", 6-ом "А", 6-ом "Б";</li>
+            <li>Белорусскую литературу в 9-ом "А", 9-ом "В", 11-ом "Б", 11-ом "А", 6-ом "А", 6-ом "Б";</li>
+            <li>Искусство. Отечественную и мировую художественную культуру в 8-ом "А";</li>
+            <li>Классный час в 11-ом "Б"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Козловская Надежда Ивановна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Russion/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя русского языка и литературы</span><br>
+          <span>Кл. руководитель 10-го "А"</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Классный час в 10-ом "А" и 10-ом "Б";</li>
+            <li>Информационный час в 10-ом "А" 10-ом "Б";</li>
+            <li>Русский язык в 8-ом "А", 8-ом "В", 8-ом "Г", 8-ом "Б", 9-ом "В", В 10-ом "Б", 10-ом "А";</li>
+            <li>Русскую литературу в 8-ом "А", 8-ом "В", 8-ом "Г", 8-ом "Б", 9-ом "В", В 10-ом "Б", 10-ом "А".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Савенко Кристина Петровна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Russion/teacher_2.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя русского языка и литературы</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Русский язык в 6-ом "В", 6-ом "Г", 6-ом "А", 6-ом "Б";</li>
+            <li>Русскую литературу в 6-ом "Г", 6-ом "А", 6-ом "Б", 6-ом "В".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Смолян Нина Владимировна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Russion/teacher_3.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя русского языка и литературы</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Русский язык в 11-ом "Б", 11-ом "А", 7-ом "Б", 7-ом "Г", 7-ом "А", 7-ом "В";</li>
+            <li>Русскую литературу в 11-ом "А", 11-ом "Б", 7-ом "Г", 7-ом "А", 7-ом "В", 7-ом "Б".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Галенко Янина Маратовна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/English/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя английского языка</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Английский язык в 3-ем "Б", 3-ем "Г", 4-ом "А", 4-ом "Б", 4-ом "В", 4-ом "Г".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Варанкина Светлана Андреевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/English/teacher_2.jpg" alt=""><br> 
+          <span><b>Кафедра:</b> Учителя английского языка</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Английский язык в 9-ом "В", 9-ом "Б", 9-ом "А", 11-ом "Б".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Карпеш Ирина Михайловна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/English/teacher_3.jpg" alt=""><br>  
+          <span><b>Кафедра:</b> Учителя английского языка</span><br>
+          <span>Кл. руководитель 11-го "А"</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Классный час в 11-ом "А";></li>
+            <li>Информационный час в 11-ом "А";></li>
+            <li>Английский язык в 10-ом "А", 10-ом "Б", 11-ом "Б", 11-ом "А", 5-ом "В", 5-ом "А".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Кобысь Наталья Сергеевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/English/teacher_4.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя английского языка</span><br>
+          <span>Кл. руководитель 8-го "В"</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Классный час в 8-ом "В";</li>
+            <li>Информационный час в 8-ом "В";</li>
+            <li>Английский язык в 8-ом "А", 8-ом "В", 9-ом "В", 9-ом "Б", 9-ом "А".</li>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Важова Ирина Николаевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Germany/teacher_2.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя немецкого языка</span><br>
+          <span><b>Преподает:</b></span><br>
+            <ul class="subjects">
+              <li>Немецкий язык в В, 10-ом "А", 10-ом "Б", 6-ом "А", 6-ом "В"></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop13" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Красикова Инесса Валерьевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Germany/teacher_3.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя немецкого языка</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Немецкий язык в 11-ом "Б", 11-ом "А", 3-ем "В", 3-ем "А", 5-ом "В"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop14" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Кузьменко Наталья Петровна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Germany/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя немецкого языка</span><br>
+          <span>Кл. руководитель 9-го "В"</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Классный час в 9-ом "В";</li>
+            <li>Информационный час в 9-ом "В";</li>
+            <li>Немецкий язык в 9-ом "В", 4-ом "Б", 4-ом "В", 4-ом "Г", 7-ом "А" 7-ом "В"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop15" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Толкач Елена Викентьевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Germany/teacher_4.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя немецкого языка</span><br>
+          <span><b>Преподаёт:</b><br>
+          <ul class="subjects">
+            <li>Английский язык в 8-ом "В";</li>
+            <li>Немецкий язык в 8-ом "Б", 8-ом "А", 7-ом "Б".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop16" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Сорока Елена Анатольевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/China/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учитель китайского языка</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Немецкий язык в 5-ом "Б", 6-ом "Г".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop17" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Бондаренко Татьяна Григорьевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Mathematics/teacher_2.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя математики</span><br>
+          <span>Кл. руководитель В, 10-го "Б"</span><br>
+          <span><b>Преподаёт:</b></span><br>
+          <ul class="subjects">
+            <li>Классный час в "В";></li>
+            <li>Информационный час в "В";></li>
+            <li>Математику в 9-ом "В", В, 10-ом "Б", 6-ом "А", 6-ом "Б".></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop18" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Прокопчик Елена Геннадьевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Mathematics/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b><br> Учителя математики</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop19" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Глушкевич Наталья Михайловна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Mathematics/teacher_4.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя математики</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Математику в 9-ом "Б", 9-ом "А", 10-ом "А", 7-ом "В", 7-ом "А"</li>
+          </ul>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop20" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Конюшкова Галина Александровна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Mathematics/teacher_3.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя математики</span><br>
+          <span>Кл. руководитель 7-го "Б"</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Математику в 6-ом "В", 6-ом "Г", 7-ом "А", 7-ом "Б";></li>
+            <li>Платное занятие "В мире чисел" в 6-ом "Г".></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop21" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Мышковская Антонина Петровна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="img/Physics/teacher_1.jpg" alt=""><br>
+            <span><b>Кафедра:</b> Учителя физики</span><br>
+            <span>Кл. руководитель 5-го "В"</span><br>
+            <span><b>Преподаёт:</b><br></span>
+            <ul class="subjects">
+              <li>Классный час в 5-ом "В";</li>
+              <li>Информационный час в 5-ом "В";</li>
+              <li>Человек и Мир в 5-ом "В";</li>
+              <li>Физику в 8-ом "Г", 8-ом "Б", 8-ом "А", 8-ом "В", 10-ом "Б", 10-ом "А", 7-ом "Г", 7-ом "Б".</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop22" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Прокопчик Елена Геннадьевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Physics/teacher_2.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя физики</span><br>
+          <span>Кл. руководитель 9-го "А"</span>
+          <br><b>Преподаёт:</b></b><br></span>
+          <ul class="subjects">
+            <li>Классный час в 9 "А";</li>
+            <li>Информационный час в 9 "А";</li>
+            <li>Физику в 9-ом "В", 9-ом "Б", 9-ом "А", 11-ом "Б", 11-ом "А", 7-ом "А", 7-ом "В"</li>
+            <li>Астрономию в 11-ом "Б", 11 "А".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop23" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Алексанина Галина Сергеевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="img/Informatics/teacher_2.jpg" alt=""><br>
+            <span><b>Кафедра:</b> Учителя информатики</span><br>
+            <span>Кл. руководитель 8-го "Б"</span><br>
+            <span><b>Преподаёт:</b><br>
+            <ul class="subjects">
+              <li>Классный час в 8-ом "Б";></li>
+              <li>Информационный час в 8-ом "Б";></li>
+              <li>Информатика в 6-ом "А", 6-ом "Б", 6-ом "В", 6-ом "Г", 7-ом "А", 7-ом "В", 7-ом "Г", 7-ом "Б", 8-ом "Б", 8-ом "А", 8-ом "В", 8-ом "Г", 9-ом "В", 9-ом "Б", 9-ом "А", В, 10-ом "А", 10-ом "Б", 11-ом "Б", 11-ом "А".</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop24" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Хилько Татьяна Павловна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Informatics/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя информатики</span><br>
+          <span>Кл. руководитель 7-го "Б"</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Информационный час в 7-ом "Б";<br></li>
+            <li>Информатику в 6-ом "А", 6-ом "Б", 6-ом "В", 6-ом "Г", 7-ом "Б", 7-ом "А", 7-ом"В", 7-ом "Г", 8-ом "Б", 8-ом "А", 8-ом "В", 8-ом "Г", 9-ом "В", 9-ом "Б", 9-ом "А", 10-ом "Б", 10-ом "А", 11-ом "Б", 11-ом "А".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop25" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Алисейко Ирина Владимировна
+          </h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Chemestry/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя химии</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li><span>Химию в 8-ом "А", В, 10-ом "А", 10-ом "Б", 11-ом "Б" 11-ом "А"</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop26" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Ратайко Карина Владиславовна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <class class="modal-body">
+          <img src="img/Chemestry/teacher_2.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя химии</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li><span>Химию в 8-ом "Б", 8-ом "В", 8-ом "Г", 9-ом "В", 9-ом "Б", 9-ом "А", 7-ом "А", 7-ом "Г", 7-ом "В", 7-ом "Б";</span></li>
+            <li><span>Человек и Мир в 5-ом "А", 5-ом "Б".</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop27" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Литвинович Татьяна Викторовна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Bialogy/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя биологии</span><br>
+          <span>Кл. руководитель 6-го "А"</span><br>
+          <span><b>Преподаёт:</b><br>
+          <ul class="subjects">
+            <li>Классный час в 6-ом "А";</li>
+            <li>Информационный час в 6-ом "А";</li>
+            <li>Человек и Мир в 6-ом "Г" 6-ом "А" 6-ом "Б";</li>
+            <li>Биологию в 8-ом "А", 10-ом "Б", 10-ом "А", 11-ом "Б", 11-ом "А", 6-ом "Г", 6-ом "А", 6-ом "Б", 6-ом "В".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop28" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Соловей Ольга Александровна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="img/Bialogy/teacher_2.jpg" alt=""><br>
+            <span><b>Кафедра:</b> Учителя биологии</span><br>
+            <span>Кл. руководитель 7-го "А"</span><br>
+            <span><b>Преподаёт:</b><br>
+            <ul class="subjects">
+              <li>Классный час в 7-ом "А";</li>
+              <li>Информационный час в 7-ом "А";</li>
+              <li>Биологию в 8-ом "Б", 8-ом "В", 8-ом "Г", 9-ом "В", 9-ом "Б", 9-ом "А", 10-ом "А", 11-ом "А", 7-ом "В", 7-ом "Б", 7-ом "А", 7-ом "Г".</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop29" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Алфёрова Татьяна Васильевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="img/History/teacher_2.jpg" alt=""><br>
+            <span><b>Кафедра:</b> Учителя истории</span><br>
+            <span><b>Преподаёт:</b><br></span>
+            <ul class="subjects">
+              <li>История Беларуси в 8-ом "В", 8-ом "Г", 8-ом "Б", 8-ом "А", 6-ом "Г", 6-ом "В", 7-ом "Б" 7-ом "А";</li>
+              <li>Всемирная История в 8-ом "В", 8-ом "Г", 8-ом "Б", 8-ом "А", 5-ом "Б", 6-ом "Г", 6-ом "В", 7-ом "Б" 7-ом "А".</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop30" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Филимонова Светлана Васильевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/History/teacher_3.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя истории</span><br>
+          <span><b>Преподаёт:</b><br>
+          <ul class="subjects">
+            <li>Искусство. Отечественная и мировая художественная культура в 8-ом "Б", 8-ом"В", 8-ом "Г", 9-ом "В", 9-ом "Б", 9-ом "А", 6-ом "Б", 6-ом "В", 6-ом "Г", 6-ом "А", 7-ом "Б", 7-ом "А", 7-ом "В", 7-ом "Г";</li>
+            <li>Обществоведение в 9-ом "В", 9-ом "Б".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop31" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Янковская Инесса Николаевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/History/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя истории</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Историю Беларуси в 10 "В", 10-ом "А", 10-ом "Б", 11-ом "Б", 11-ом "А", 6-ом "А" 6-ом "Б";</li>
+            <li>Всемирную Историю в 10 "В", 10-ом "А", 10-ом "Б", 11-ом "Б", 11-ом "А", 5-ом "А", 6-ом "А", 6-ом "Б";</li>
+            <li>Обществоведение в 9-ом "А", 10-ом "А", 10-ом "Б", 11-ом "Б", 11-ом "А"</li>
+            <li>Историю в 5-ом "В".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop32" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Александрова Анжелика Васильевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Geography/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учитель географии</span><br>
+          <span>Кл. руководитель 6-го "В"</span><br>
+          <span><b>Преподаёт:</b>
+          <ul class="subjects">
+            <li>География в 6-ом "А", 6-ом "Б", 6-ом "В", 6-ом "Г", 7-ом "А", 7-ом "В", 7-ом "Г", 7-ом "Б", 8-ом "А", 8-ом "В", 8-ом "Г", 8-ом "Б", 9-ом "В", 9-ом "Б", 9-ом "А", 10-ом "А", 10-ом "Б", 11-ом "Б" 11-ом "А"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop33" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Андрюк Юлия Александровна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="img/Physical/teacher_1.jpg" alt=""><br>
+            <span><b>Кафедра:</b> Учителя физической культуры и здоровья</span><br>
+            <span>Кл. руководитель 5-го "Б"</span><br>
+            <span><b>Преподаёт:</b><br>
+            Физическая культура и здоровье в 9-ом "Б", 9-ом "А", 9-ом "В", 10-ом "А", В, 10-ом "Б", 7-ом "Б" 7-ом "Г" 7-ом "А" 7-ом "В";
+            Час здоровья и спорта в 9-ом "А", 9-ом "В", 9-ом "Б", В, 7-ом "В" 7-ом "Б" 7-ом "Г" 7-ом "А".</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop34" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Демидовец Евгений Сергеевич</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Physical/teacher_3.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя физической культуры и здоровья</span><br>
+          <span><b>Преподаёт:</b><br>
+          <ul class="subjects">
+            <li>Физическая культура и здоровье в 3-ем "А".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop35" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Збаровская Тамара Аркадьевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="img/Physical/teacher_4.jpg" alt=""><br>
+            <span><b>Кафедра:</b> Учителя физической культуры и здоровья</span><br>
+            <span><b>Преподаёт:</b></span><br>
+            <ul class="subjects">
+              <li>Час здоровья и спорта в 8-ом "В", 8-ом "Г", 8-ом "Б", 8-ом "А", 5-ом "А" 5-ом "Б" 5-ом "В";</li>
+              <li>Физическая культура и здоровье в 8-ом "В", 8-ом "Г", 8-ом "Б", 8-ом "А", 11-ом "Б", 11-ом "А", 5-ом "А" 5-ом "Б" 5-ом "В".</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop36" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Клименко Геннадий Георгиевич</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Physical/teacher_2.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя физической культуры и здоровья</span><br>
+          <span><b>Преподаёт:</b></span><br>
+          <ul class="subjects">
+            <li>Физическая культура и здоровье в 11-ом "Б", 11-ом "А", 10-ом "А", 10-ом "Б", 3-ем "Г", 4-ом "А", 4-ом "Б", 4-ом "В", 4-ом "Г", 6-ом "А" 6-ом "Б" 6-ом "В" 6-ом "Г";</li>
+            <li>Час здоровья и спорта в 11-ом "Б", 11-ом "А", 10-ом "А", 10-ом "Б", 3-ем "Г", 4-ом "А", 4-ом "Б", 4-ом "В", 4-ом "Г", 6-ом "А" 6-ом "Б" 6-ом "В" 6-ом "Г".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop37" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Орлова Елена Николаевна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Music/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учитель музыки</span><br>
+          <span>Кл. руководитель 5-го "Б"</span><br>
+          <span><b>Преподаёт:</b></span><br>
+          <ul class="subjects">
+            <li>Музыка в 3-ем "Г", 3-ем "В", 3-ем "А", 3-ем "Б", 4-ом "Б", 4-ом "В", 4-ом "Г", 4-ом "А", 5-ом "Б";</li>
+            <li>Искусство. Отечественная и мировая художественная культура в 5-ом "В" 5-ом "А" 5-ом "Б".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop38" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Бобович Дмитрий Леонидович</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Labor/teacher_2.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя трудового обучения</span><br>
+          <span><b>Преподаёт:</b><br></span>
+          <ul class="subjects">
+            <li>Трудовое обучение в 5-ом "В", 5-ом "А", 5-ом "Б", 6-ом "Б", 6-ом "В", 6-ом "Г", 6-ом "А", 7-ом "Г", 7-ом "А", 7-ом "В", 7-ом "Б", 8-ом "Б", 8-ом "А", 8-ом "В", 8-ом "Г", 9-ом "А", 9-ом "В", 9-ом "Б", 10-ом "Б", В, 10-ом "А", 11-ом "Б" 11-ом "А".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop39" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Ходосок Жанна Викторовна</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Labor/teacher_1.jpg" alt=""><br>
+          <span><b>Кафедра:</b> Учителя трудового обучения</span><br>
+          <span><b>Преподаёт:</b></span><br>
+          <ul class="subjects">
+            <li>Черчение в 10-ом "А", 10-ом "Б", 11-ом "А" 11-ом "Б"</li>
+            <li>Трудовое обучение в 5-ом "В", 5-ом "А", 5-ом "Б", 6-ом "Г", 6-ом "А", 6-ом "Б", 6-ом "В", 7-ом "А", 7-ом "В", 7-ом "Б", 7-ом "Г", 8-ом "Б", 8-ом "А", 8-ом "В", 8-ом "Г", 9-ом "Б", 9-ом "А", 9-ом "В", 10-ом "А", В, 10-ом "Б", 11-ом "А" 11-ом "Б".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
